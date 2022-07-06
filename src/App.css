@@ -1,38 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+    max-width: 800px;
+    width: 100%;
+
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.containerPosts {
+    margin: 50px 0 0 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.post {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 15px;
+
+    border: 2px solid gray;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.post + .post {
+    margin: 10px 0 0 0;
 }
 
-.App-link {
-  color: #61dafb;
+.postContent {
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.containerForm {
+    margin: 15px 0 0 0;
+}
+
+.inputForm {
+    width: 100%;
+
+    padding: 5px;
+
+    border: 2px solid gray;
+}
+
+.inputForm + .inputForm {
+    margin: 5px 0 0 0;
+}
+
+.btnForm {
+    padding: 5px 20px;
+    margin: 10px 0 0 0;
+
+    background: none;
+    border: 2px solid gray;
+
+    cursor: pointer;
+}
+
+/* ! */
+
+.containerModalWindow {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: none;
+
+    background: rgba(0, 0, 0, .5);
+}
+
+.containerModalWindow.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalWindowContent {
+    min-width: 250px;
+
+    padding: 25px;
+
+    background: white;
+    border-radius: 16px;
+}
+
+.containerBtnCloseModal {
+    display: flex;
+    justify-content: end;
+
+    margin: -10px 0 0 0;
+}
+
+.btnCloseModal {
+    background: none;
+    border: none;
+
+    font-size: 36px;
+
+    cursor: pointer;
+}
+
+/* ! */
+
+.post-enter {
+    opacity: 0;
+}
+
+.post-enter-active {
+    opacity: 1;
+    transition: all 500ms ease-in;
+}
+
+.post-exit {
+    opacity: 1;
+}
+
+.post-exit-active {
+    opacity: 0;
+    transition: all 500ms ease-in;
+}
+
+/* ! */
+
+.containerPagination {
+    display: flex;
+    justify-content: center;
+
+    padding: 30px 0
+}
+
+.btnPagination {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.btnPagination + .btnPagination {
+    margin: 0 0 0 10px;
+}
+
+.btnPagination.active {
+    border: 2px solid red;
+
+    font-weight: bold;
 }
