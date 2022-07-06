@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/altimes/static/css/main.7f71ec87.css",
-    "main.js": "/altimes/static/js/main.2b51132d.js",
-    "index.html": "/altimes/index.html",
-    "main.7f71ec87.css.map": "/altimes/static/css/main.7f71ec87.css.map",
-    "main.2b51132d.js.map": "/altimes/static/js/main.2b51132d.js.map"
+    "main.css": "/listPostsWithPagination/static/css/main.7f71ec87.css",
+    "main.js": "/listPostsWithPagination/static/js/main.2b51132d.js",
+    "index.html": "/listPostsWithPagination/index.html",
+    "main.7f71ec87.css.map": "/listPostsWithPagination/static/css/main.7f71ec87.css.map",
+    "main.2b51132d.js.map": "/listPostsWithPagination/static/js/main.2b51132d.js.map"
   },
   "entrypoints": [
     "static/css/main.7f71ec87.css",
